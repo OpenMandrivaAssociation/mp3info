@@ -10,7 +10,7 @@ Source2:	mp3info-32.png
 Source3:	mp3info-48.png
 License:	GPL
 BuildRoot:	%_tmppath/%name-%version-%release-root
-BuildRequires:	gtk-devel ncurses-devel
+BuildRequires:	gtk+2-devel ncurses-devel
 
 %description
 An MP3 technical info viewer and ID3 1.x tag editor.
