@@ -35,7 +35,6 @@ mkdir -p $RPM_BUILD_ROOT/{%{_bindir},%{_mandir}/man1}
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}.desktop <<EOF
 [Desktop Entry]
-Encoding=UTF-8
 Name=MP3 info
 Comment=Utility for MP3 information and tag modification
 Exec=%{_bindir}/gmp3info
