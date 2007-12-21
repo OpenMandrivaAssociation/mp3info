@@ -9,6 +9,7 @@ Source1:	mp3info-16.png
 Source2:	mp3info-32.png
 Source3:	mp3info-48.png
 License:	GPL
+BuildRoot:	%_tmppath/%name-%version-%release-root
 BuildRequires:	gtk+2-devel ncurses-devel
 
 %description
