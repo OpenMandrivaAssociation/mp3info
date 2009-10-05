@@ -9,6 +9,7 @@ Source0:	ftp.debian.org/debian/pool/main/m/mp3info/%{name}-%{version}.tgz
 Source1:	mp3info-16.png
 Source2:	mp3info-32.png
 Source3:	mp3info-48.png
+Patch0:		mp3info-0.8.5a-format_not_a_string_literal_and_no_format_arguments.diff
 BuildRequires:	gtk+2-devel ncurses-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
@@ -23,6 +24,7 @@ mp3info is availlable with both ncurses and gtk UIs.
 
 %prep
 %setup -q -n %name-%version
+%patch0 -p0
 
 %build
 %make CFLAGS="%{optflags}"
