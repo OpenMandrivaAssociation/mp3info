@@ -1,4 +1,4 @@
-Summary:	Mp3info - Utility for MP3 information and tag modification
+Summary:	- Utility for MP3 information and tag modification
 Name:		mp3info
 Version:	0.8.5a
 Release:	%mkrel 5
