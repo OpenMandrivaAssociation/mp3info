@@ -10,7 +10,8 @@ Source1:	mp3info-16.png
 Source2:	mp3info-32.png
 Source3:	mp3info-48.png
 Patch0:		mp3info-0.8.5a-format_not_a_string_literal_and_no_format_arguments.diff
-BuildRequires:	gtk+2-devel ncurses-devel
+BuildRequires:	pkgconfig(gtk+-2.0)
+BuildRequires:	ncurses-devel
 
 %description
 An MP3 technical info viewer and ID3 1.x tag editor.
@@ -104,24 +105,24 @@ EOF
 * Mon Sep 18 2006 Gwenole Beauchesne <gbeauchesne@mandriva.com> 0.8.4-14mdv2007.0
 - Rebuild
 
-* Sat Jun 17 2006 GÃ¶tz Waschk <waschk@mandriva.org> 0.8.4-13mdk
+* Sat Jun 17 2006 GÃƒÂ¶tz Waschk <waschk@mandriva.org> 0.8.4-13mdk
 - Rebuild
 - use mkrel
 
 * Sun Jan 01 2006 Mandriva Linux Team <http://www.mandrivaexpert.com/> 0.8.4-12mdk
 - Rebuild
 
-* Tue Sep  2 2003 Götz Waschk <waschk@linux-mandrake.com> 0.8.4-11mdk
+* Tue Sep  2 2003 GÃ¶tz Waschk <waschk@linux-mandrake.com> 0.8.4-11mdk
 - fix buildrequires
 
-* Wed Jul 23 2003 Per Øyvind Karlsen <peroyvind@sintrax.net> 0.8.4-10mdk
+* Wed Jul 23 2003 Per Ã˜yvind Karlsen <peroyvind@sintrax.net> 0.8.4-10mdk
 - fix gcc-3.3 patch (P0)
 
-* Fri Jul 18 2003 Per Øyvind Karlsen <peroyvind@sintrax.net> 0.8.4-9mdk
+* Fri Jul 18 2003 Per Ã˜yvind Karlsen <peroyvind@sintrax.net> 0.8.4-9mdk
 - fix P0, dunno what happened..!?!?!?
 - cosmetics
 
-* Thu Jun 19 2003 Per Øyvind Karlsen <peroyvind@sintrax.net> 0.8.4-8mdk
+* Thu Jun 19 2003 Per Ã˜yvind Karlsen <peroyvind@sintrax.net> 0.8.4-8mdk
 - fix for gcc-3.3 (P0, from Christiaan Welvaart <cjw@daneel.dyndns.org>)
 - rm -rf $RPM_BUILD_ROOT in the correct stage
 - fixed a type
