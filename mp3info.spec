@@ -1,7 +1,7 @@
-Summary:	- Utility for MP3 information and tag modification
+Summary:	Utility for MP3 information and tag modification
 Name:		mp3info
 Version:	0.8.5a
-Release:	%mkrel 5
+Release:	6
 Group:		Sound
 License:	GPL
 URL:		ftp://metalab.unc.edu/pub/linux/apps/sound/mp3-utils/mp3info
@@ -11,7 +11,6 @@ Source2:	mp3info-32.png
 Source3:	mp3info-48.png
 Patch0:		mp3info-0.8.5a-format_not_a_string_literal_and_no_format_arguments.diff
 BuildRequires:	gtk+2-devel ncurses-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 An MP3 technical info viewer and ID3 1.x tag editor.
@@ -30,7 +29,6 @@ mp3info is availlable with both ncurses and gtk UIs.
 %make CFLAGS="%{optflags}"
 
 %install
-rm -rf %{buildroot}
 
 mkdir -p %{buildroot}/{%{_bindir},%{_mandir}/man1}
 %makeinstall prefix=%{buildroot} mandir=%{buildroot}%{_mandir}/man1
@@ -58,7 +56,6 @@ EOF
 %endif
 
 %clean
-rm -rf %{buildroot}
 
 %files
 %defattr (-,root,root)
