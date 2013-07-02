@@ -13,6 +13,8 @@ Patch0:		mp3info-0.8.5a-format_not_a_string_literal_and_no_format_arguments.diff
 BuildRequires:	pkgconfig(gtk+-2.0)
 BuildRequires:	ncurses-devel
 
+%define debug_package %{nil}
+
 %description
 An MP3 technical info viewer and ID3 1.x tag editor.
 MP3Info has an interactive mode (using curses) and a command line mode.
