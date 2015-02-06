@@ -1,7 +1,7 @@
 Summary:	Utility for MP3 information and tag modification
 Name:		mp3info
 Version:	0.8.5a
-Release:	7
+Release:	8
 Group:		Sound
 License:	GPL
 URL:		ftp://metalab.unc.edu/pub/linux/apps/sound/mp3-utils/mp3info
